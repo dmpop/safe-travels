@@ -17,5 +17,10 @@ if [ ! -x "$(command -v rsync)" ] || [ ! -x "$(command -v sshpass)" ]; then
     apk add rsync sshpass
 fi
 
-sshpass -p "$remote_password" rsync -avhz --info=progress2 --delete -P -e "ssh -p 22" \
+mkdir -p "$local_dir"
+mount -t ios . "$local_dir"
+
+sshpass -p "$remote_password" rsync -avhz --exclude=".*" --info=progress2 --delete -P -e "ssh -p 22" \
     "$local_dir/" "$remote_user"@"$remote_server":"$remote_dir"
+
+umount "$local_dir"

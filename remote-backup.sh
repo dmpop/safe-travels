@@ -14,7 +14,7 @@ ntfy_server="ntfy.sh"
 ntfy_topic=""
 # ------------------------------
 
-if [ ! -x "$(command -v rsync)" ] || [ ! -x "$(command -v sshpass)" ]; then
+if [ ! -x "$(command -v rsync)" ] || [ ! -x "$(command -v sshpass)" ] || [ ! -x "$(command -v dialog)" ]; then
     apk update
     apk upgrade
     apk add rsync sshpass dialog

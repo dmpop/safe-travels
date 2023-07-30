@@ -12,7 +12,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-if [ ! -x "$(command -v rsync)" ]; then
+if [ ! -x "$(command -v rsync)" ] || [ ! -x "$(command -v dialog)" ] || [ ! -x "$(command -v curl)" ]; then
     apk update
     apk upgrade
     apk add rsync dialog curl

@@ -1,6 +1,6 @@
 # iSH shell scripts
 
-Simple shell scripts for use with [iSH](https://ish.app/)
+Simple shell scripts for use with [iSH](https://ish.app/). Further info: [Turning an iPad or an iPhone into a Linux-based photography companion](https://cameracode.coffee/ipad-iphone-linux-photography/).
 
 ## Problems?
 

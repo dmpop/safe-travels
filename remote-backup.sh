@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Dmitri Popov, dmpop@cameracode.coffee
-# Source code: https://github.com/dmpop/ish-scripts
+# Source code: https://github.com/dmpop/safe-travels
 
 # ------- CONFIGURATION -------
 local_dir="/path/to/source/dir"

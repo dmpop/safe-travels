@@ -1,10 +1,10 @@
-# iSH shell scripts
+# Safe travels
 
-Simple shell scripts for use with [iSH](https://ish.app/). Further info: [Turning an iPad or an iPhone into a Linux-based photography companion](https://cameracode.coffee/ipad-iphone-linux-photography/).
+Simple shell scripts that together with [iSH](https://ish.app/) transform an iPadOS or an iOS device into a backup appliance. Further info: [Turning an iPad or an iPhone into a Linux-based photography companion](https://cameracode.coffee/ipad-iphone-linux-photography/).
 
 ## Problems?
 
-Please report bugs and issues in the [Issues](https://github.com/dmpop/ish-scripts/issues) section.
+Please report bugs and issues in the [Issues](https://github.com/dmpop/safe-travels/issues) section.
 
 ## Author
 

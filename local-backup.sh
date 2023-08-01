@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: Dmitri Popov, dmpop@cameracode.coffee
-# Source code: https://github.com/dmpop/ish-scripts
+# Source code: https://github.com/dmpop/safe-travels
 
 # Specify ntfy_topic to enable ntfy.sh notifications
 ntfy_server="ntfy.sh"

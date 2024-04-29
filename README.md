@@ -1,6 +1,10 @@
 # Safe travels
 
-Simple shell scripts that together with [iSH](https://ish.app/) transform an iPadOS or an iOS device into a backup appliance. Further info: [Turning an iPad or an iPhone into a Linux-based photography companion](https://cameracode.coffee/ipad-iphone-linux-photography/).
+Simple shell scripts that together with [iSH](https://ish.app/) transform an iPadOS or an iOS device into a backup appliance.
+
+The [Linux Photography](https://gumroad.com/l/linux-photography) book provides instructions on installing and using Safe Travels. Get your copy at [Google Play Store](https://play.google.com/store/books/details/Dmitri_Popov_Linux_Photography?id=cO70CwAAQBAJ) or [Gumroad](https://gumroad.com/l/linux-photography).
+
+<img src="https://cameracode.coffee/uploads/linux-photography.png" title="Linux Photography" width="300"/>
 
 ## Problems?
 

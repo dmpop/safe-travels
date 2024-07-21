@@ -4,7 +4,6 @@
 # Source code: https://github.com/dmpop/safe-travels
 
 # ------- CONFIGURATION -------
-local_dir="/path/to/source/dir"
 remote_user="user"
 remote_password="secret"
 remote_server="hello.xyz"
@@ -20,14 +19,15 @@ if [ ! -x "$(command -v rsync)" ] || [ ! -x "$(command -v sshpass)" ] || [ ! -x 
     apk add rsync sshpass dialog
 fi
 
-mkdir -p "$local_dir"
+mnt="backup"
+mkdir -p "$mnt"
 dialog --erase-on-exit --backtitle "Info" --msgbox "When prompted, choose the LOCAL folder." 7 30
-mount -t ios . "$local_dir"
+mount -t ios . "$mnt"
 
 sshpass -p "$remote_password" rsync -avhz --exclude=".*" --info=progress2 --delete -P -e "ssh -p 22" \
-    "$local_dir/" "$remote_user"@"$remote_server":"$remote_dir"
+    "$mnt/" "$remote_user"@"$remote_server":"$remote_dir"
 
-umount "$local_dir"
+umount "$mnt"
 
 if [ ! -z "$ntfy_topic" ]; then
     curl \

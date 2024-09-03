@@ -38,7 +38,7 @@ if [ -d "backup/$stop_dir" ]; then
     exit 1
 fi
 
-rsync --info=progress2 --stats --modify-window=1 --update --recursive --times --delete "$1" "backup/"
+rsync --progress --stats --modify-window=1 --update --recursive --times --delete "$1" "backup/"
 umount "$1"
 umount backup
 
